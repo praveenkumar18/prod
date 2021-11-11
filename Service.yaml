@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: Sampleapp
+	  namespace: prod
+  name: Sample-service
+spec:
+  selector:
+    app: Sampleapp
+  type: ClusterIP
+  ports:
+  - port: 3000
+    targetPort: 3000

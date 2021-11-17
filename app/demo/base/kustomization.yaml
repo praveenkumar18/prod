@@ -1,0 +1,8 @@
+resources:
+ - Deployment.yaml
+ - Service.yaml
+commonLabels:
+ owner: PK
+
+
+   

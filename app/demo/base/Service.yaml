@@ -3,10 +3,10 @@ apiVersion: v1
 kind: Service
 metadata:
     name: sampleservice
-    namespace: prod
+    namespace: bs
 spec:
   selector:
-    app: prod
+    app: bs
   type: NodePort
   ports:
   - port: 3000

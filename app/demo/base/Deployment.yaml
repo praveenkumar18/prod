@@ -2,16 +2,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: sampledeployment
-  namespace: prod
+  namespace: bs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: prod
+      app: bs
   template:
     metadata:
       labels:
-        app: prod
+        app: bs
     spec:
       containers:
       - name: imageprod
